@@ -93,10 +93,12 @@ class InputController extends Controller
         $name = $request->name;
 
         try {
+
             Mail::send('partials.mail', ['data' => $request->all()], function($message) use ($name) {
-                $message->to('issayev.adilet@gmail.com', 'Lucor Service')->subject('Lucor Service - Новая заявка от '.$name);
+                $message->to('lucor.service@gmail.com', 'Lucor Service')->subject('Lucor Service - Новая заявка от '.$name);
                 $message->from('electron.servant@gmail.com', 'Electron Servant');
             });
+
             $status = 'alert-success';
             $message = 'Ваша заявка принято.';
 
