@@ -89,6 +89,7 @@
           </div>
           <div class="modal-body">
             <form class="offer-form" action="/send-app" method="POST">
+              {{ csrf_field() }}
               <div class="form-row">
                 <div class="col-md-4">
                   <input type="text" class="form-control mb-2 mr-sm-2" id="name" name="name" placeholder="Введите имя" minlength="2" maxlength="40" value="" required>

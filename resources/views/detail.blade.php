@@ -77,12 +77,13 @@
           <div class="col-lg-12">
             <div class="owl-carousel owl-theme related-product-carousel-one">
             @foreach($category->products as $product)
+              <?php $images = unserialize($product->images); ?>
               <div class="item">
                 <div class="single-service-one">
                   <div class="image-block">
                     <img src="/img/products/{{ $product->path.'/'.$product->image }}" alt="{{ $product->title }}">
                     <div class="overlay-block">
-                      <a class="more-link" href="/img/products/{{ $product->path.'/'.$product->image }}"><i class="fa fa-arrows-alt"></i></a>
+                      <a class="more-link" href="/img/products/{{ $product->path.'/'.$images[0]['image'] }}"><i class="fa fa-arrows-alt"></i></a>
                     </div>
                   </div>
                   <div class="text-block">

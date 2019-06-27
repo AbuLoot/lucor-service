@@ -1110,7 +1110,7 @@ a:visited {
   margin-bottom: 30px;
 }
 .blog-style-three .single-blog-style-three .text-block {
-  padding: 56px 40px;
+  padding: 30px 20px;
 }
 .blog-style-three .single-blog-style-three .text-block h3 {
   margin: 0;
@@ -1920,9 +1920,9 @@ a:visited {
 .single-service-one .text-block {
   background-color: white;
   box-shadow: 0px 0px 25px 0px rgba(13, 29, 13, 0.1);
-  padding: 0 40px;
-  padding-bottom: 54px;
-  padding-top: 40px;
+  padding: 0 25px;
+  padding-bottom: 40px;
+  padding-top: 30px;
 }
 .single-service-one .text-block h3,
 .single-service-one .text-block p {
@@ -2402,7 +2402,7 @@ a:visited {
   background: #222222 url(../images/background/page-title-bg.jpg) center center no-repeat fixed;
   background-size: cover;
   position: relative;
-  padding: 60px 0;
+  padding: 45px 0;
 }
 .page-title-block:before {
   content: '';
