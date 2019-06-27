@@ -56,8 +56,6 @@
       </div>
     </div>
 
-    @include('partials.alerts')
-
     <!-- ABOUT 2 -->
     <section class="offer-style-one" id="about">
       <div class="container">
