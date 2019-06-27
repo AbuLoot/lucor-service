@@ -176,7 +176,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <!-- <div class="col-lg-3 col-md-6">
               <div class="footer-widget links-widget">
                 <div class="footer-widget-title">
                   <h3>Соц. сети</h3>
@@ -188,7 +188,7 @@
                   <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
             <div class="col-lg-3 col-md-6">
               <div class="footer-widget links-widget">
                 <div class="footer-widget-title">

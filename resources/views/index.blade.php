@@ -109,7 +109,7 @@
           </div>
 
           <div class="services-carousel-one">
-            @foreach($category->products as $product)
+            @foreach($category->products->take(4) as $product)
             <?php $images = unserialize($product->images); ?>
               <div class="item">
                 <div class="single-service-one">

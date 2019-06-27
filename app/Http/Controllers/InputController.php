@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Mail;
 use Validator;
 
 use App\App;
@@ -89,15 +90,31 @@ class InputController extends Controller
                    "MIME-Version: 1.0" . "\r\n" . 
                    "Content-type: text/html; charset=UTF-8" . "\r\n";
 
+        $name = $request->name;
+
+        try {
+            Mail::send('partials.mail', ['data' => $request->all()], function($message) use ($name) {
+                $message->to('issayev.adilet@gmail.com', 'Lucor Service')->subject('Lucor Service - Новая заявка от '.$name);
+                $message->from('electron.servant@gmail.com', 'Electron Servant');
+            });
+            $status = 'alert-success';
+            $message = 'Ваша заявка принято.';
+
+        } catch (Exception $e) {
+
+            $status = 'alert-danger';
+            $message = 'Произошла ошибка: '.$e->getMessage();
+        }
+
         // Send the email
-        if (mail('issayev.adilet@gmail.com, lucor.service@gmail.com', $subject, $content, $headers)) {
+        /*if (mail('issayev.adilet@gmail.com, lucor.service@gmail.com', $subject, $content, $headers)) {
             $status = 'alert-success';
             $message = 'Ваша заявка принята. Спасибо!';
         }
         else {
             $status = 'alert-danger';
             $message = 'Произошла ошибка.';
-        }
+        }*/
 
         // dd($status, $message);
         return redirect()->back()->with([
