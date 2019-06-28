@@ -701,13 +701,13 @@ a:visited {
 /*
 -5 footer styles
 */
-.site-footer {
+/*.site-footer {
   background-color: #161827;
   background-image: url(../images/resources/footer-map-1-1.png);
   background-repeat: no-repeat;
   background-position: center center;
   padding-top: 100px;
-}
+}*/
 .site-footer .main-footer {
   padding-bottom: 120px;
 }
@@ -2402,7 +2402,7 @@ a:visited {
   background: #222222 url(../images/background/page-title-bg.jpg) center center no-repeat fixed;
   background-size: cover;
   position: relative;
-  padding: 45px 0;
+  padding: 50px 0;
 }
 .page-title-block:before {
   content: '';
